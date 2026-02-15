@@ -1,0 +1,29 @@
+# --- Spring Boot & Build Tools ---
+target/
+build/
+.gradle/
+
+# --- Artifacts ---
+*.jar
+*.war
+*.ear
+*.zip
+
+# --- IDEs (IntelliJ, Eclipse, VS Code) ---
+.idea/
+*.iml
+*.iws
+.settings/
+.project
+.classpath
+.metadata/
+.vscode/
+
+# --- Logs & Temp ---
+*.log
+tmp/
+*.tmp
+hs_err_pid*
+
+# --- Config (機密情報がある場合のみ) ---
+# application.properties
