@@ -1,0 +1,10 @@
+body {
+  margin: 0;           /* 周りの余計な隙間を消す */
+  height: 100vh;       /* 画面の高さ（View Height）100%分を確保 */
+  display: flex;       /* flexボックスにする */
+  justify-content: center; /* 横方向の中央 */
+  align-items: center;     /* 縦方向の中央 */
+
+  flex-direction: column;
+  text-align: center;  /* フォームの中の文字やボタンも真ん中にしたい場合 */
+}
