@@ -1,1 +1,13 @@
-/* input画面専用CSS(将来拡張用)*/
+.container {
+    display: flex;
+}
+
+.history {
+    width: 40%;
+    padding: 10px;
+}
+
+.input {
+    width: 60%;
+    padding: 10px;
+}

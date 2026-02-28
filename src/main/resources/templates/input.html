@@ -7,14 +7,47 @@
 <link rel="stylesheet" th:href="@{/css/input.css}">
 </head>
 <body>
-<form action="/calculation" method="post" >
-    <p>高度 :<br>
-    <input type="number" step="any" name="altitude"></p>
-    <p>速度 :<br>
-    <input type="number" step="any" name="speed"></p>
-    <p>風速 :<br>
-    <input type="number" step="any" name="wind"></p>
-    <p><input type="submit" value="計算する"></p>
-</form>
+<div class="container">
+
+    <!-- 左：履歴 -->
+    <div class="history">
+        <h3>計算履歴</h3>
+
+        <table>
+            <tr>
+                <th>日時</th>
+                <th>高度</th>
+                <th>速度</th>
+                <th>風速</th>
+                <th>結果</th>
+            </tr>
+
+            <tr th:each="h : ${histories}">
+                <td th:text="${h.createdAt}"></td>
+                <td th:text="${h.altitude}"></td>
+                <td th:text="${h.speed}"></td>
+                <td th:text="${h.wind}"></td>
+                <td th:text="${h.result} + ' m'"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 右：入力 -->
+    <div class="input">
+        <form action="/calculation" method="post">
+            <p>高度 :<br>
+                <input type="number" step="any" name="altitude"></p>
+
+            <p>速度 :<br>
+                <input type="number" step="any" name="speed"></p>
+
+            <p>風速 :<br>
+                <input type="number" step="any" name="wind"></p>
+
+            <p><input type="submit" value="計算する"></p>
+        </form>
+    </div>
+
+</div>
 </body>
 </html>
