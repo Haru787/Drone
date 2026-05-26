@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <title>計算結果</title>
-<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="/css/common.css">
 </head>
 <body>
     <div class="center">
-        <div class="header-box">
+        <header class="header">
             <h2>計算結果</h2>
-        </div>
+        </header>
 
-        <div class="main-box" style="text-align: center;">
+        <main class="main" style="text-align: center;">
             <p style="font-size: 1.1rem; margin-bottom: 20px;">
-                落下分散範囲:<br>
+                落下分散範囲<br>
                 <strong style="font-size: 1.8rem; color: #e74c3c;" th:text="${R} + ' メートル'">0 メートル</strong>
             </p>
             <button type="button" onclick="history.back()">再計算する</button>
-        </div>
+        </main>
 
-        <div class="footer-box">
+        <footer class="footer">
             <p>© 2026 Drone Safety Project</p>
-        </div>
+        </footer>
     </div>
 </body>
 </html>
