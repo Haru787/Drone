@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <title>入力画面</title>
-<link rel="stylesheet" th:href="@{/css/common.css}">
+<link rel="stylesheet" href="/css/common.css">
 </head>
 <body>
     <div class="center">
-        <form action="/calculation" method="post">
-            <p>高度 :<br>
-                <input type="number" step="any" name="altitude"></p>
+        <header class="header">
+            <h2>落下分散範囲計算</h2>
+        </header>
+        
+        <main class="main">
+            <form action="/calculation" method="post">
+                <p>高度 (m)<br>
+                    <input type="number" step="any" name="altitude"></p>
 
-            <p>速度 :<br>
-                <input type="number" step="any" name="speed"></p>
+                <p>速度 (m/s)<br>
+                    <input type="number" step="any" name="speed"></p>
 
-            <p>風速 :<br>
-                <input type="number" step="any" name="wind"></p>
+                <p>風速 (m/s)<br>
+                    <input type="number" step="any" name="wind"></p>
 
-            <p><input type="submit" value="計算する"></p>
-        </form>
+                <p><input type="submit" value="計算する"></p>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Drone Safety Project</p>
+        </footer>
     </div>
 </body>
 </html>

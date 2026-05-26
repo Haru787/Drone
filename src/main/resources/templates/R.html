@@ -1,6 +1,27 @@
-<link rel="stylesheet" th:href="@{/css/common.css}">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>計算結果</title>
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <div class="center">
+        <div class="header-box">
+            <h2>計算結果</h2>
+        </div>
 
-<div class="center" >
-<p>落下分散範囲: <span th:text="${R} + 'メートル'"></span></p>
-<button type="button" onclick="history.back()">再計算</button>
-</div>
+        <div class="main-box" style="text-align: center;">
+            <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                落下分散範囲:<br>
+                <strong style="font-size: 1.8rem; color: #e74c3c;" th:text="${R} + ' メートル'">0 メートル</strong>
+            </p>
+            <button type="button" onclick="history.back()">再計算する</button>
+        </div>
+
+        <div class="footer-box">
+            <p>© 2026 Drone Safety Project</p>
+        </div>
+    </div>
+</body>
+</html>
