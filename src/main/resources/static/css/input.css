@@ -7,7 +7,7 @@
 /* 2. メインコンテンツ（フォーム・結果）ブロック */
 .main {
     width: 60%;
-    background-color: white; /* 白いカード風のブロック */
+    background-color: white;
     padding: 25px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     box-sizing: border-box;
@@ -19,19 +19,18 @@
     display: flex;
     flex-direction: column;
     flex: 1; /* height: 100%;より柔軟で良い書き方らしい */
-    justify-content: space-between; /* 項目を上下に綺麗に分散、または最後のボタンだけ margin-top: auto; にする */
+    justify-content: space-between;
 }
 
-/* フォーム内の各入力項目（pタグ）同士の空白も15pxにする */
+/* フォーム内の各入力項目同士の空白を15pxにする */
 .main form .form-group {
     margin: 0 0 15px 0;
 }
 
 .main form .form-group:last-child {
-margin-bottom: 0; /* 最後のボタンの下は余白なし */
+margin-bottom: 0; /* 最後のボタンの下の余白 */
 }
 
-/* 入力フォームの見た目を少し整える */
 input[type="number"] {
     width: 100%;
     padding: 8px;
