@@ -1,0 +1,11 @@
+@media screen and (max-width: 479px) {
+.wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+.main-box,
+.left {
+        width: 100%;
+    }
+}
