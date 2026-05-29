@@ -1,1 +1,50 @@
-/*将来拡張用s*/
+.wrapper {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* 2. メインコンテンツ（フォーム・結果）ブロック */
+.main {
+    width: 60%;
+    background-color: white; /* 白いカード風のブロック */
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* height: 100%;より柔軟で良い書き方らしい */
+    justify-content: space-between; /* 項目を上下に綺麗に分散、または最後のボタンだけ margin-top: auto; にする */
+}
+
+/* フォーム内の各入力項目（pタグ）同士の空白も15pxにする */
+.main form .form-group {
+    margin: 0 0 15px 0;
+}
+
+.main form .form-group:last-child {
+margin-bottom: 0; /* 最後のボタンの下は余白なし */
+}
+
+/* 入力フォームの見た目を少し整える */
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.left {
+    width: 40%;
+    background-color: rgb(255, 229, 168);
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}

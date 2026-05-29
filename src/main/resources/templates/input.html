@@ -1,5 +1,90 @@
 <!DOCTYPE html>
 <html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドローン落下分散範囲計算</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/input-rep.css">
+</head>
+
+<body>
+    <div class="contents">
+        <header class="header">
+            <h2>落下分散範囲計算</h2>
+        </header>
+        <div class="wrapper">
+
+            <main class="main">
+
+                <form action="/calculation" method="post">
+
+                    <div class="form-group">
+                        <div class="row-top">
+                            <span>高度 (m)</span>
+                            <input type="reset" value="リセット" class="reset-btn">
+                        </div>
+
+                        <input type="number" step="any" name="altitude" required>
+                    </div>
+
+                    <div class="form-group">
+                        速度 (m/s)<br>
+                        <input type="number" step="any" name="speed" required>
+                    </div>
+
+                    <div class="form-group">
+                        風速 (m/s)<br>
+                        <input type="number" step="any" name="wind" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="計算する">
+                    </div>
+
+                </form>
+
+            </main>
+
+            <aside class="left">
+
+                <h3>【入力について】</h3>
+
+                <p>
+                    値は半角数字で入力して下さい。
+                </p>
+
+                <div class="paragraph">
+
+                    <h3>※注意</h3>
+
+                    <p>
+                        本ツールは簡易計算用です。<br>
+                        レベル3飛行・レベル4飛行における国土交通省への航空法申請資料としては使用できません。
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+        <footer class="footer">
+            <p>© 2026 Drone Safety Project</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <title>入力画面</title>
@@ -31,4 +116,4 @@
         </footer>
     </div>
 </body>
-</html>
+</html> -->
