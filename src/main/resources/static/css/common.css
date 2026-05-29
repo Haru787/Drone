@@ -1,5 +1,5 @@
 body {
-    background-image: url("/css/IMG_6419.jpg"); /* 写真の場所を指定 */
+    background-image: url("IMG_6419.jpg"); /* 写真の場所を指定 */
     background-size: cover;             /* 画面いっぱいに綺麗に広げる */
     background-position: center;        /* 写真の中央を基準にする */
     margin: 0;

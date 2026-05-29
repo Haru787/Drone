@@ -22,7 +22,7 @@ public class CalculationController {
         int range = (int) ((speed + wind) * fallTime);
 
         model.addAttribute("R", range);
-        return "R";
+        return "result";
     }
 
     @GetMapping("/")
