@@ -40,6 +40,14 @@ input[type="number"] {
     box-sizing: border-box;
 }
 
+/* リセットボタン */
+.row-top {
+  display: flex;
+  justify-content: space-between; /* 主軸を中心に均等配置する（文字は左、ボタンは右） */
+  align-items: center;            /* 上下の中心を揃える */
+  width: 100%;                    /* 横幅いっぱいに広げる */
+}
+
 .left {
     width: 40%;
     background-color: rgb(255, 229, 168);

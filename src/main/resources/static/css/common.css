@@ -19,7 +19,6 @@ body {
 
 .header,
 .wrapper,
-.main,
 .footer {
     width: 80%;
     max-width: 600px;
@@ -44,13 +43,10 @@ body {
 
 /* 2. メインコンテンツ（フォーム・結果）ブロック */
 .main {
-    /* width: 60%; */
     background-color: white; /* 白いカード風のブロック */
     padding: 25px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     box-sizing: border-box;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 /* 入力フォームの見た目を少し整える */
@@ -77,7 +73,6 @@ input[type="submit"], button {
 
 /* 3. フッターブロック */
 .footer {
-    /* width: 600px; */
     background-color: #bdc3c7; /* 薄いグレー */
     color: #333;
     padding: 10px;
